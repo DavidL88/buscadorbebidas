@@ -14,7 +14,7 @@ const Bebida = ({bebida}) => {
         />
 
         <Card.Body>
-          <Card.Title>{bebida.strDrink}</Card.Title>
+          <Card.Title className="text-center">{bebida.strDrink}</Card.Title>
           <Button
             variant="warning"
             className="w-100 text-uppercase mt-2"
