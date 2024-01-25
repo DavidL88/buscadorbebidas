@@ -32,7 +32,7 @@ const Formulario = () => {
       <Row>
         <Col md={6}>
           <Form.Group className="mb-3">
-            <Form.Label htmlFor="nombre">Liquor Name</Form.Label>
+            <Form.Label className="ms-1" htmlFor="nombre">Liquor Name</Form.Label>
 
             <Form.Control 
               id="nombre"
@@ -49,7 +49,7 @@ const Formulario = () => {
         </Col>
         <Col md={6}>
           <Form.Group className="mb-3">
-            <Form.Label htmlFor="categoria">Beverage Category</Form.Label>
+            <Form.Label className="ms-1" htmlFor="categoria">Beverage Category</Form.Label>
 
             <Form.Select
               id="categoria"
