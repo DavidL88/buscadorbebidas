@@ -1,5 +1,5 @@
 
-# Buscador de Bebidas
+# Drink Finder
 
 - Buscador de recetas para Cócteles con licores mediante API. https://bebidasearch.vercel.app
 
