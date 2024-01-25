@@ -11,7 +11,7 @@ function App() {
     <CategoriasProvider>
       <BebidasProvider>
         <header className="py-5 bg-black">
-          <h1>Buscador de Bebidas</h1>
+          <h1>Drink Finder</h1>
         </header>
 
         <Container className="mt-5">

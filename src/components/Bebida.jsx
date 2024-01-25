@@ -14,7 +14,7 @@ const Bebida = ({bebida}) => {
         />
 
         <Card.Body>
-          <Card.Title className="text-center">{bebida.strDrink}</Card.Title>
+          <Card.Title className="text-center overflow-hidden" style={{ height: '24px' }}>{bebida.strDrink}</Card.Title>
           <Button
             variant="warning"
             className="w-100 text-uppercase mt-2"
@@ -23,7 +23,7 @@ const Bebida = ({bebida}) => {
               handleBebidaIdClick(bebida.idDrink)
             }}
           >
-            Ver Receta
+            View Recipe
           </Button>
         </Card.Body>
       </Card>

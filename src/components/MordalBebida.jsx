@@ -24,15 +24,15 @@ const MordalBebida = () => {
           alt={`Imagen receta ${receta.strDrink}`}
         />
 
-        <Modal.Header>
+        <Modal.Header className="justify-content-center">
           <Modal.Title>{receta.strDrink}</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
-          <div className="p-3">
-            <h2>Instrucciones</h2>
+          <div className="p-2">
+            <h2>Instructions</h2>
             {receta.strInstructions}
-            <h2>Ingredientes y Cantidades</h2>
+            <h2 className="mt-3">Ingredients</h2>
             {mostrarIngredientes()}
           </div>
         </Modal.Body>

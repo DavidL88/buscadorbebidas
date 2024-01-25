@@ -17,7 +17,7 @@ const Formulario = () => {
   const handleSubmit = e => {
     e.preventDefault()
     if(Object.values(busqueda).includes('')) {
-      setAlerta('Todos los campos son obligatorios')
+      setAlerta('All fields are required')
       return
     }
     setAlerta('')
@@ -32,12 +32,12 @@ const Formulario = () => {
       <Row>
         <Col md={6}>
           <Form.Group className="mb-3">
-            <Form.Label htmlFor="nombre">Nombre Licor</Form.Label>
+            <Form.Label htmlFor="nombre">Liquor Name</Form.Label>
 
             <Form.Control 
               id="nombre"
               type="text"
-              placeholder="Ej: Tequila, Vodka, etc"
+              placeholder="Ex: Tequila, Vodka, etc"
               name="nombre"
               value={busqueda.nombre}
               onChange={e => setBusqueda({
@@ -49,7 +49,7 @@ const Formulario = () => {
         </Col>
         <Col md={6}>
           <Form.Group className="mb-3">
-            <Form.Label htmlFor="categoria">Categoría Bebida</Form.Label>
+            <Form.Label htmlFor="categoria">Beverage Category</Form.Label>
 
             <Form.Select
               id="categoria"
@@ -60,7 +60,7 @@ const Formulario = () => {
                 [e.target.name] : e.target.value
               })}
             >
-              <option>- Selecciona Categoria -</option>
+              <option>- Select Category -</option>
               {categorias.map(categoria => (
                 <option
                   key={categoria.strCategory}
@@ -80,7 +80,7 @@ const Formulario = () => {
             className="text-uppercase w-100"
             type="submit"
           >
-            Buscar Bebidas
+            Search Drinks
           </Button>
         </Col>
       </Row>
