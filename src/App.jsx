@@ -10,7 +10,7 @@ function App() {
   return (
     <CategoriasProvider>
       <BebidasProvider>
-        <header className="py-5">
+        <header className="py-5 bg-black">
           <h1>Buscador de Bebidas</h1>
         </header>
 

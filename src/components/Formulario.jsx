@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Button, Form, Row, Col, FormText, FormControl, Alert } from "react-bootstrap"
+import { Button, Form, Row, Col, Alert } from "react-bootstrap"
 import useCategorias from "../hooks/useCategorias"
 import useBebidas from "../hooks/useBebidas"
 
@@ -32,7 +32,7 @@ const Formulario = () => {
       <Row>
         <Col md={6}>
           <Form.Group className="mb-3">
-            <Form.Label htmlFor="nombre">Nombre Bebida</Form.Label>
+            <Form.Label htmlFor="nombre">Nombre Licor</Form.Label>
 
             <Form.Control 
               id="nombre"
@@ -76,7 +76,7 @@ const Formulario = () => {
       <Row className="justify-content-end">
         <Col md={3}>
           <Button 
-            variant="danger"
+            variant="secondary"
             className="text-uppercase w-100"
             type="submit"
           >
